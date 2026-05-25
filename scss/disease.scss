@@ -1,0 +1,135 @@
+:root {
+  --theme: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.wrapper {
+  font-family: var(--theme);
+  .main-block {
+    width: 1280px;
+    margin: 0 80px;
+    padding: 32px 16px;
+    .main-text {
+      width: 1248px;
+      margin: 0 0 32px;
+      p {
+        font-family: var(--theme);
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+      .text-btns {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        button {
+          border: 1px solid transparent;
+          background-color: #d0fae5;
+          color: #007a55;
+          font-weight: 500;
+          font-size: 12px;
+          padding: 8px;
+          padding-inline: 16px;
+          border-radius: 8px;
+        }
+      }
+    }
+    .disease-block {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .dis-box {
+        width: 1248px;
+        .dis-box-wrap {
+          display: flex;
+          flex-direction: row;
+          border: 0.5px solid rgb(200, 200, 200);
+          border-radius: 20px;
+          .dis-box-img {
+            width: 256px;
+            border-radius: 20px;
+            img {
+              width: 100%;
+              height: 100%;
+              border-top-left-radius: 20px;
+              border-bottom-left-radius: 20px;
+              object-fit: cover;
+            }
+          }
+          .dis-box-block {
+            padding: 24px;
+            .title {
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              span {
+                width: 230px;
+                padding: 4px;
+                background-color: #009966;
+                color: white;
+                border-radius: 8px;
+                font-size: 14px;
+                font-family: var(--theme);
+                padding-inline: 16px;
+              }
+              h2 {
+                font-family: var(--theme);
+                margin-bottom: 8px;
+              }
+            }
+            .info {
+              p {
+                font-family: var(--theme);
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 16px;
+              }
+            }
+            .symptoms-block {
+              .symptoms-wrap {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                margin-bottom: 12px;
+                p {
+                  font-family: var(--theme);
+                  font-size: 14px;
+                  font-weight: 600;
+                }
+                .symptoms-dis {
+                  display: flex;
+                  gap: 8px;
+                  span {
+                    border: 0px solid transparent;
+                    border-radius: 18px;
+                    background-color: #e2e0e0;
+                    font-size: 12px;
+                    padding: 4px;
+                    font-family: var(--theme);
+                  }
+                }
+                .symptoms-dis span:nth-child(4) {
+                  background-color: transparent;
+                  color: #8c8c8c;
+                }
+              }
+              button {
+                border: 0px solid transparent;
+                background-color: transparent;
+                a {
+                  list-style: none;
+                  text-decoration: none;
+                  color: #009966;
+                }
+                a:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты - MEDICAMENTUM</title>
+    <link rel="stylesheet" href="../style/core.css" />
+    <style>
+      body {
+        background-color: #ddf5d77c;
+      }
+      .contacts-section {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 0 20px 40px;
+      }
+
+      .contacts-section h2 {
+        font-size: 32px;
+        color: #0e6f1e;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .contacts-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 30px;
+      }
+
+      .contact-info {
+        background: #f9f9f9;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-info h3 {
+        font-size: 22px;
+        color: #0e6f1e;
+        margin-bottom: 20px;
+      }
+
+      .contact-item {
+        margin-bottom: 16px;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .contact-label {
+        font-weight: 600;
+        color: #0e6f1e;
+        min-width: 100px;
+      }
+
+      .contact-value {
+        color: #333;
+        flex: 1;
+      }
+
+      .contact-value a {
+        color: #0e6f1e;
+        text-decoration: none;
+        transition: text-decoration 0.2s ease;
+      }
+
+      .contact-value a:hover {
+        text-decoration: underline;
+      }
+
+      .form-container {
+        background: #f9f9f9;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        grid-column: 1 / -1;
+      }
+
+      .form-container h3 {
+        font-size: 22px;
+        color: #0e6f1e;
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 16px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #333;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #dcdcdc;
+        border-radius: 8px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        font-size: 14px;
+        transition: border-color 0.2s ease;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: #0e6f1e;
+        box-shadow: 0 0 0 2px rgba(14, 111, 30, 0.1);
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      .form-group button {
+        background: #0e6f1e;
+        color: #ffffff;
+        padding: 12px 32px;
+        font-size: 16px;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .form-group button:hover {
+        background-color: #0d5a1a;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .working-hours {
+        background: #f0f8f0;
+        border-left: 4px solid #0e6f1e;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+
+      .working-hours h4 {
+        color: #0e6f1e;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+
+      .working-hours p {
+        margin: 4px 0;
+        font-size: 14px;
+        color: #333;
+      }
+
+      @media (max-width: 768px) {
+        .contacts-container {
+          grid-template-columns: 1fr;
+        }
+
+        .form-container {
+          grid-column: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <section class="header-num">
+        <div class="header-num-phone">
+          <p><i class="fa-solid fa-phone"></i> 24/7 Support:</p>
+          <a class="call-btn" href="tel:+996 600 000 312">+996 600 000 312</a>
+        </div>
+      </section>
+      <section class="header">
+        <h1 class="logo" id="logo">Medicamentum</h1>
+        <div class="search-block">
+          <div class="search-box">
+            <span class="icon"></span>
+            <input
+              type="text"
+              name="search"
+              placeholder="Поиск по названию лекарств"
+              class="search"
+            />
+          </div>
+          <ul class="search-products" id="products"></ul>
+        </div>
+        <nav>
+          <ul class="nav">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="./about.html">Про нас</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="header-ref">
+        <div class="ref-block">
+          <a href="./drugs.html">Все лекарста</a>
+          <a href="">Заболевания</a>
+          <a href="">Статьи</a>
+          <a href="./faq.html">FAQ</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="contacts-section">
+        <h2>Свяжитесь с нами</h2>
+
+        <div class="contacts-container">
+          <div class="contact-info">
+            <h3>📍 Офисы</h3>
+
+            <div class="contact-item">
+              <span class="contact-label">Главный офис:</span>
+              <span class="contact-value"> г. Бишкек, пр. Ч.Айтматова 64 </span>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-label">Филиал:</span>
+              <span class="contact-value"> г. Бишкек, пр. Ч.Айтматова 64 </span>
+            </div>
+
+            <!-- <div class="contact-item">
+              <span class="contact-label">Представительство:</span>
+              <span class="contact-value"> Бишкек, пр. Ч.Айтматова 64 </span>
+            </div> -->
+
+            <div class="working-hours">
+              <h4>⏰ Время работы</h4>
+              <p><strong>Пн-Пт:</strong> 08:00 - 20:00</p>
+              <p><strong>Сб:</strong> 09:00 - 18:00</p>
+              <p><strong>Вс:</strong> 10:00 - 17:00</p>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <h3>📞 Контактная информация</h3>
+
+            <div class="contact-item">
+              <span class="contact-label">Телефон:</span>
+              <span class="contact-value">
+                <a href="tel:+996 600 000 312">+996 600 000 312</a>
+              </span>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-label">Горячая линия:</span>
+              <span class="contact-value">
+                <a href="tel:+996 600 000 312"> +996 600 000 312</a> (бесплатно)
+              </span>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-label">Email:</span>
+              <span class="contact-value">
+                <a href="mailto:">medicamentum312@gmail.com</a>
+              </span>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-label">Сайт:</span>
+              <span class="contact-value">
+                <a href="#">www.medicamentum.ru</a>
+              </span>
+            </div>
+
+            <div class="working-hours">
+              <h4>💬 Социальные сети</h4>
+              <p>
+                <a href="https://www.instagram.com/016ks">INSTAGRAM</a> |
+                <a href="https://t.me/thiskais">TELEGRAM</a> |
+                <a href="https:/wa.me//996600000312">WHATSAPP</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <h3>✉️ Форма обратной связи</h3>
+          <p style="color: #666; margin-bottom: 20px">
+            Заполните форму и мы свяжемся с вами в кратчайшие сроки
+          </p>
+
+          <form>
+            <div class="form-group">
+              <label for="name">Ваше имя *</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div
+              style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px"
+            >
+              <div class="form-group">
+                <label for="phone">Номер телефона *</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+996 222 304 001"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@mail.ru"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Тема сообщения *</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Например: Вопрос о доставке"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Сообщение *</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Напишите ваше сообщение..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit">Отправить сообщение</button>
+            </div>
+
+            <p
+              style="
+                font-size: 12px;
+                color: #999;
+                text-align: center;
+                margin-top: 12px;
+              "
+            >
+              * — поля обязательны для заполнения
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+body {
+  background-color: rgba(221, 245, 215, 0.4862745098);
+  color: #222222;
+  font-family: "Inter", sans-serif;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1250px;
+  margin: 20px auto;
+  padding: 0 20px 40px;
+}
+.catalog .drug {
+  width: 300px;
+  border: 1px solid #dcdcdc;
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.catalog .drug .drug-img {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+.catalog .drug .drug-img .drug-img img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.catalog .drug:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+.catalog .drug-title {
+  font-size: 18px;
+  line-height: 1.3;
+  color: #151415;
+  font-weight: 600;
+}
+.catalog .drug-des {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+.catalog .drug-info {
+  font-size: 14px;
+  color: #585858;
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+.catalog .drug-info .drug-info li {
+  margin-bottom: 2px;
+}
+.catalog .drug-info a {
+  color: black;
+  text-decoration: none;
+}
+.catalog .drug-price {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 8px;
+}
+.catalog .drug-price .price-label {
+  font-size: 13px;
+  color: #555;
+}
+.catalog .drug-price .price-value {
+  font-weight: 600;
+  color: green;
+  font-size: 18px;
+}
+.catalog .drug-actions {
+  display: flex;
+  justify-content: center;
+}
+.catalog .drug-actions button {
+  background: #f1c40f;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+.catalog .drug-actions button:hover {
+  background-color: #f4d03f;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 1024px) {
+  .catalog {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .catalog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=drug.css.map */

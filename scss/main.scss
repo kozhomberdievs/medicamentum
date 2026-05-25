@@ -1,0 +1,154 @@
+
+.main {
+  height: 620px;
+  background-color: #ddf5d77c;
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;
+    .main-wrapper-block {
+      width: 1250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 32px;
+      margin: 40px auto;
+
+      .main-wrapper-text {
+        width: 610px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0 0 24px;
+        .wrapper-info {
+          padding: 16px 0 0;
+          display: flex;
+          flex-direction: row;
+          gap: 32px;
+          .first-info-block p:nth-child(1) {
+            font-weight: bold;
+            font-size: 30px;
+            color: #009966;
+          }
+          .second-info-block p:nth-child(1) {
+            font-weight: bold;
+            font-size: 30px;
+            color: #009966;
+          }
+          .third-info-block p:nth-child(1) {
+            font-weight: bold;
+            font-size: 30px;
+            color: #009966;
+          }
+        }
+        .wrapper-adapter-link {
+          display: flex;
+          flex-direction: row;
+          gap: 16px;
+          margin: 0 0 24px;
+        }
+        .wrapper-adapter-link div:nth-child(1) {
+          width: 200px;
+          height: 40px;
+          // background-color: #009966;
+          background-color: #16a34a;
+          border-radius: 12px;
+          border: 0px solid transparent;
+          padding: 0 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          a {
+            color: white;
+            text-decoration: none;
+            list-style: none;
+            font-weight: 500;
+          }
+        }
+        .wrapper-adapter-link div:nth-child(2) {
+          width: 200px;
+          height: 40px;
+          background-color: white;
+          border-radius: 12px;
+          border: 0px solid transparent;
+          padding: 0 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          a {
+            color: #000;
+            text-decoration: none;
+            list-style: none;
+            font-weight: 500;
+          }
+        }
+        .wrapper-reference {
+          width: 200px;
+          padding: 4px 16px;
+          color: #007a55;
+          border: 0px solid transparent;
+          background-color: #d0fae5;
+          border-radius: 12px;
+          font-size: 14px;
+          margin: 0 0 24px;
+        }
+        h2 {
+          font-size: 48px;
+          margin: 0 0 24px;
+        }
+        .wrap-p {
+          font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+          width: 100%;
+          font-size: 18px;
+          color: #606060;
+          margin: 0 0 24px;
+        }
+      }
+      .main-img-block {
+        width: 610px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .main-img {
+          width: 610px;
+          img {
+            width: 100%;
+            border-radius: 20px;
+          }
+        }
+        .main-img-text {
+          position: absolute;
+          top: 435px;
+          left: -40px;
+          box-shadow: 0 4px 12px rgb(35, 35, 35);
+          padding: 24px;
+          width: 290px;
+          background-color: white;
+          border-radius: 12px;
+          border: 0px solid transparent;
+          font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+          .img-text-icon {
+            // position: absolute;
+            // width: 240px;
+            gap: 4px;
+            // margin: 24px;
+            display: flex;
+            flex-direction: row;
+
+            span {
+              font-size: 30px;
+            }
+            div p:nth-child(1) {
+              color: #101828;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}

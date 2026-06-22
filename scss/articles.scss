@@ -1,3 +1,93 @@
+// :root {
+//   --theme: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+//     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+// }
+// .wrapper {
+//   font-family: var(--theme);
+//   .main-block {
+//     width: 1280px;
+//     margin: 0 80px;
+//     padding: 32px 16px;
+//     .main-text {
+//       width: 1248px;
+//       margin: 0 0 32px;
+//       p {
+//         font-family: var(--theme);
+//         font-size: 24px;
+//         font-weight: 700;
+//         margin-bottom: 16px;
+//       }
+//       .text-btns {
+//         display: flex;
+//         flex-direction: row;
+//         gap: 8px;
+//         button {
+//           border: 1px solid transparent;
+//           background-color: #d0fae5;
+//           color: #007a55;
+//           font-weight: 500;
+//           font-size: 12px;
+//           padding: 8px;
+//           padding-inline: 16px;
+//           border-radius: 8px;
+//         }
+//       }
+    
+//     }
+//   }
+// }
+
+// // ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+
+
+// @media (max-width: 1280px) {
+//   .wrapper {
+//     .main-block {
+//       width: 100%;
+//       margin: 0;
+//       padding: 32px 16px;
+//       .main-text {
+//         width: 100%;
+//         margin: 0 0 32px;
+//         p {
+//           font-size: 20px;
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (max-width: 768px) {
+//   .wrapper {
+//     .main-block {
+//       width: 100%;
+//       margin: 0;
+//       padding: 32px 16px;
+//       .main-text {
+//         width: 100%;
+//         margin: 0 0 32px;
+//         p {
+//           font-size: 18px;
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (max-width: 480px) {
+//   .wrapper {
+//     .main-block {
+//       width: 100%;
+//       margin: 0;
+//       padding: 32px 16px;
+//       .main-text {
+//         width: 100%;
+//         margin: 0 0 32px;
+//         p {
+//           font-size: 16px;
+//         }
+//       }
+//     }
+//   }
+// }
 :root {
   --theme: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -38,3 +128,63 @@
 }
 
 // ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+
+
+@media (max-width: 1280px) {
+  .wrapper {
+    .main-block {
+      width: 100%;
+      margin: 0;
+      padding: 32px 16px;
+      .main-text {
+        width: 100%;
+        margin: 0 0 32px;
+        p { font-size: 20px; }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    .main-block {
+      width: 100%;
+      margin: 0;
+      padding: 24px 16px;
+      .main-text {
+        width: 100%;
+        margin: 0 0 24px;
+        p { font-size: 18px; }
+        .text-btns {
+          flex-wrap: wrap;
+          gap: 6px;
+          button {
+            font-size: 11px;
+            padding: 6px 12px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .wrapper {
+    .main-block {
+      width: 100%;
+      margin: 0;
+      padding: 16px 12px;
+      .main-text {
+        width: 100%;
+        margin: 0 0 16px;
+        p { font-size: 16px; }
+        .text-btns {
+          flex-direction: column;
+          align-items: flex-start;
+          button {
+            width: 100%;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

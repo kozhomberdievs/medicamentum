@@ -1,3 +1,4 @@
+
 .feature-drugs {
   width: 100vw;
   height: 100%;
@@ -16,7 +17,23 @@
       width: 100%;
       height: 100%;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .feature-drugs-link {
+        width: 150px;
+        min-height: 25px;
+        border: 1px solid #999;
+        border-radius: 8px;
+        padding: 5px;
+        :hover {
+          color: #50b938;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
       h2{
         font-size: 44px;
         margin-bottom: 8px;
@@ -38,6 +55,89 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+// ==========================
+// MEDIA QUERIES — FEATDRUG
+// ==========================
+
+// До 1280px
+@media (max-width: 1280px) {
+  .feature-drugs {
+    .wrapper {
+      width: 100%;
+      padding: 0 20px;
+
+      .feature-drugs-text {
+        h2 {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
+
+// До 1024px
+@media (max-width: 1024px) {
+  .feature-drugs {
+    padding: 40px 0;
+
+    .wrapper {
+      width: 100%;
+      padding: 0 16px;
+
+      .feature-drugs-text {
+        h2 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// До 768px
+@media (max-width: 768px) {
+  .feature-drugs {
+    padding: 32px 0;
+
+    .wrapper {
+      padding: 0 16px;
+
+      .feature-drugs-text {
+        h2 {
+          font-size: 26px;
+        }
+      }
+
+      .catalog {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+  }
+}
+
+// До 480px
+@media (max-width: 480px) {
+  .feature-drugs {
+    padding: 24px 0;
+
+    .wrapper {
+      padding: 0 12px;
+
+      .feature-drugs-text {
+        h2 {
+          font-size: 22px;
+        }
+      }
+
+      .catalog {
+        grid-template-columns: 1fr !important;
       }
     }
   }

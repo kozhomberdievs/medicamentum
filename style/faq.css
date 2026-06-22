@@ -62,4 +62,64 @@ section .wrapper-main-block .main-block .main-block-faq .block-faq .faq .faq-ite
 section .wrapper-main-block .main-block .main-block-faq .block-faq .faq .faq-item .answer.show {
   max-height: 200px;
   margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  section .wrapper-main-block .main-block .main-block-faq .block-faq {
+    width: 90%;
+    max-width: 600px;
+    margin: 32px auto;
+  }
+}
+@media (max-width: 768px) {
+  section .wrapper-main-block .main-block .main-block-text {
+    padding: 28px 16px;
+  }
+  section .wrapper-main-block .main-block .main-block-text h2 {
+    font-size: 22px;
+  }
+  section .wrapper-main-block .main-block .main-block-text p {
+    font-size: 14px;
+  }
+  section .wrapper-main-block .main-block .main-block-faq {
+    padding-top: 12px;
+  }
+  section .wrapper-main-block .main-block .main-block-faq .block-faq {
+    width: 100%;
+    margin: 24px auto;
+    padding: 0 16px;
+  }
+  section .wrapper-main-block .main-block .main-block-faq .block-faq p {
+    font-size: 20px;
+  }
+  section .wrapper-main-block .main-block .main-block-faq .block-faq .faq {
+    padding: 8px;
+  }
+  section .wrapper-main-block .main-block .main-block-faq .block-faq .faq .faq-item .question {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  section .wrapper-main-block .main-block .main-block-text {
+    padding: 20px 12px;
+  }
+  section .wrapper-main-block .main-block .main-block-faq .block-faq {
+    margin: 16px auto;
+    padding: 0 12px;
+  }
+  section .wrapper-main-block .main-block .main-block-faq .block-faq p {
+    font-size: 18px;
+  }
+  section .wrapper-main-block .main-block .main-block-faq .block-faq .faq {
+    border-radius: 12px;
+  }
+  section .wrapper-main-block .main-block .main-block-faq .block-faq .faq .faq-item {
+    padding: 10px 0;
+  }
+  section .wrapper-main-block .main-block .main-block-faq .block-faq .faq .faq-item .question {
+    font-size: 14px;
+  }
+  section .wrapper-main-block .main-block .main-block-faq .block-faq .faq .faq-item .answer {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=faq.css.map */

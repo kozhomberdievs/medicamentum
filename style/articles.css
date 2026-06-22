@@ -35,4 +35,63 @@
   padding: 8px;
   padding-inline: 16px;
   border-radius: 8px;
+}
+
+@media (max-width: 1280px) {
+  .wrapper .main-block {
+    width: 100%;
+    margin: 0;
+    padding: 32px 16px;
+  }
+  .wrapper .main-block .main-text {
+    width: 100%;
+    margin: 0 0 32px;
+  }
+  .wrapper .main-block .main-text p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper .main-block {
+    width: 100%;
+    margin: 0;
+    padding: 24px 16px;
+  }
+  .wrapper .main-block .main-text {
+    width: 100%;
+    margin: 0 0 24px;
+  }
+  .wrapper .main-block .main-text p {
+    font-size: 18px;
+  }
+  .wrapper .main-block .main-text .text-btns {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .wrapper .main-block .main-text .text-btns button {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+}
+@media (max-width: 480px) {
+  .wrapper .main-block {
+    width: 100%;
+    margin: 0;
+    padding: 16px 12px;
+  }
+  .wrapper .main-block .main-text {
+    width: 100%;
+    margin: 0 0 16px;
+  }
+  .wrapper .main-block .main-text p {
+    font-size: 16px;
+  }
+  .wrapper .main-block .main-text .text-btns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .main-block .main-text .text-btns button {
+    width: 100%;
+    text-align: left;
+  }
 }/*# sourceMappingURL=articles.css.map */

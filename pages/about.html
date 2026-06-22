@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Про нас - MEDICAMENTUM</title>
     <link rel="stylesheet" href="../style/core.css" />
+    <link rel="stylesheet" href="../style/all.css" />
     <style>
+      :root {
+        --theme: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
       body {
         background-color: #ddf5d77c;
+        font-family: var(--theme);
       }
       .about-section {
         max-width: 900px;
@@ -69,18 +75,105 @@
         color: #666;
         margin: 0;
       }
+
+      /* ── Планшет (до 1024px) ── */
+      @media (max-width: 1024px) {
+        .about-section {
+          max-width: 100%;
+          margin: 24px auto;
+          padding: 0 24px 32px;
+        }
+
+        .about-section h2 {
+          font-size: 26px;
+        }
+
+        .about-content {
+          padding: 24px;
+        }
+
+        .features {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* ── Мобильный горизонтальный (до 768px) ── */
+      @media (max-width: 768px) {
+        .about-section {
+          margin: 16px auto;
+          padding: 0 16px 24px;
+        }
+
+        .about-section h2 {
+          font-size: 22px;
+          margin-bottom: 16px;
+        }
+
+        .about-content {
+          padding: 20px;
+        }
+
+        .about-content p {
+          font-size: 15px;
+        }
+
+        .about-content h3 {
+          font-size: 18px;
+        }
+
+        .features {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 12px;
+          margin-top: 20px;
+        }
+      }
+
+      /* ── Мобильный вертикальный (до 480px) ── */
+      @media (max-width: 480px) {
+        .about-section {
+          padding: 0 12px 20px;
+        }
+
+        .about-section h2 {
+          font-size: 20px;
+        }
+
+        .about-content {
+          padding: 16px;
+          border-radius: 8px;
+        }
+
+        .about-content p {
+          font-size: 14px;
+          line-height: 1.6;
+        }
+
+        .about-content h3 {
+          font-size: 16px;
+          margin-top: 16px;
+        }
+
+        .features {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+
+        .feature-card {
+          padding: 16px;
+        }
+      }
     </style>
   </head>
-  <body >
+  <body>
     <header id="header">
       <section class="header-num">
         <div class="header-num-phone">
-          <p><i class="fa-solid fa-phone"></i> 24/7 Support: </p>
+          <p><i class="fa-solid fa-phone"></i> 24/7 Support:</p>
           <a class="call-btn" href="tel:+996 600 000 312">+996 600 000 312</a>
         </div>
       </section>
       <section class="header">
-        <h1 class="logo" id="logo">Medicamentum</h1>
+        <h1><a class="logo" id="logo" href="../index.html">MEDICAMENTUM</a></h1>
         <div class="search-block">
           <div class="search-box">
             <span class="icon"></span>
@@ -104,22 +197,21 @@
       <section class="header-ref">
         <div class="ref-block">
           <a href="./drugs.html">Все лекарства</a>
-          <a href="">Заболевания</a>
-          <a href="">Статьи</a>
+          <a href="./disease.html">Заболевания</a>
+          <a href="./">Статьи</a>
           <a href="./faq.html">FAQ</a>
         </div>
       </section>
     </header>
 
     <main>
-      <section class="about-section" style="padding: 30px 0 30px 0;">
+      <section class="about-section" style="padding: 30px 0 30px 0">
         <h2>О компании MEDICAMENTUM</h2>
 
         <div class="about-content">
           <p>
             Добро пожаловать на сайт MEDICAMENTUM — ведущей аптечной сети,
-            предоставляющей доступ к качественным лекарственным препаратам уже
-            более 15 лет.
+            предоставляющей доступ к качественным лекарственным препаратам.
           </p>
 
           <h3>Наша миссия</h3>
@@ -137,52 +229,51 @@
                 Все препараты прошли сертификацию и имеют необходимые лицензии
               </p>
             </div>
-            <div class="feature-card">
+            <!-- <div class="feature-card">
               <h4>✓ Цены</h4>
               <p>Конкурентные цены на все категории лекарственных средств</p>
-            </div>
+            </div> -->
             <div class="feature-card">
               <h4>✓ Доступность</h4>
               <p>Широкий ассортимент препаратов на любое назначение</p>
             </div>
-            <div class="feature-card">
+            <!-- <div class="feature-card">
               <h4>✓ Консультация</h4>
               <p>Опытные фармацевты готовы помочь в выборе средства</p>
-            </div>
-            <div class="feature-card">
+            </div> -->
+            <!-- <div class="feature-card">
               <h4>✓ Быстрость</h4>
               <p>Оперативная обработка заказов и доставка</p>
-            </div>
-            <div class="feature-card">
+            </div> -->
+            <!-- <div class="feature-card">
               <h4>✓ Надежность</h4>
               <p>Множество положительных отзывов от благодарных клиентов</p>
-            </div>
+            </div> -->
           </div>
 
           <h3>История</h3>
           <p>
-            MEDICAMENTUM была основана в 2009 году с целью сделать
-            высокачественные лекарства доступными для всех слоев населения. За
-            годы работы мы завоевали доверие сотен тысяч клиентов благодаря
-            честности, прозрачности и ответственному подходу к каждому заказу.
+            MEDICAMENTUM была основана в 2026 году с целью сделать
+            высокачественные лекарства доступными для всех слоев населения.
           </p>
 
-          <h3>Наша команда</h3>
+          <!-- <h3>Наша команда</h3>
           <p>
             Наш коллектив составляют высокопрофессиональные фармацевты,
             провизоры и специалисты в области фармакологии. Каждый сотрудник
             прошел специальное обучение и имеет необходимые сертификаты для
             работы в фармацевтической сфере.
-          </p>
+          </p> -->
 
-          <h3>Партнерства</h3>
+          <!-- <h3>Партнерства</h3>
           <p>
             Мы сотрудничаем только с лицензированными производителями и
             поставщиками, что гарантирует подлинность и качество каждого
             препарата в нашем каталоге.
-          </p>
+          </p> -->
         </div>
       </section>
     </main>
+    <script src="../js/search.js"></script>
   </body>
 </html>

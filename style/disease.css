@@ -55,8 +55,8 @@
   border-radius: 20px;
 }
 .wrapper .main-block .disease-block .dis-box .dis-box-wrap .dis-box-img img {
-  width: 100%;
-  height: 100%;
+  width: 260px;
+  height: 260px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   -o-object-fit: cover;
@@ -128,4 +128,98 @@
 }
 .wrapper .main-block .disease-block .dis-box .dis-box-wrap .dis-box-block .symptoms-block button a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1280px) {
+  .wrapper .main-block {
+    width: 100%;
+    margin: 0;
+    padding: 32px 20px;
+  }
+  .wrapper .main-block .main-text {
+    width: 100%;
+  }
+  .wrapper .main-block .disease-block .dis-box {
+    width: 100%;
+  }
+  .wrapper .main-block .disease-block .dis-box .dis-box-wrap .dis-box-img {
+    width: 200px;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper .main-block {
+    margin: 0;
+    padding: 24px 16px;
+  }
+  .wrapper .main-block .main-text {
+    width: 100%;
+  }
+  .wrapper .main-block .main-text .text-btns {
+    flex-wrap: wrap;
+  }
+  .wrapper .main-block .disease-block .dis-box {
+    width: 100%;
+  }
+  .wrapper .main-block .disease-block .dis-box .dis-box-wrap {
+    flex-direction: column;
+  }
+  .wrapper .main-block .disease-block .dis-box .dis-box-wrap .dis-box-img {
+    width: 100%;
+    height: 200px;
+  }
+  .wrapper .main-block .disease-block .dis-box .dis-box-wrap .dis-box-img img {
+    border-radius: 20px 20px 0 0;
+    border-bottom-left-radius: 0;
+  }
+  .wrapper .main-block .disease-block .dis-box .dis-box-wrap .dis-box-block {
+    padding: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper .main-block {
+    padding: 20px 16px;
+  }
+  .wrapper .main-block .main-text p {
+    font-size: 20px;
+  }
+  .wrapper .main-block .main-text .text-btns {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .wrapper .main-block .main-text .text-btns button {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+  .wrapper .main-block .disease-block .dis-box .dis-box-wrap {
+    flex-direction: column;
+  }
+  .wrapper .main-block .disease-block .dis-box .dis-box-wrap .dis-box-img {
+    width: 100%;
+    height: 180px;
+  }
+  .wrapper .main-block .disease-block .dis-box .dis-box-wrap .dis-box-block {
+    padding: 12px;
+  }
+  .wrapper .main-block .disease-block .dis-box .dis-box-wrap .dis-box-block .title span {
+    width: auto;
+    font-size: 12px;
+  }
+  .wrapper .main-block .disease-block .dis-box .dis-box-wrap .dis-box-block .title h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .wrapper .main-block {
+    padding: 16px 12px;
+  }
+  .wrapper .main-block .main-text p {
+    font-size: 18px;
+  }
+  .wrapper .main-block .disease-block .dis-box .dis-box-wrap .dis-box-img {
+    height: 150px;
+  }
+  .wrapper .main-block .disease-block .dis-box .dis-box-wrap .dis-box-block .symptoms-block .symptoms-wrap .symptoms-dis {
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=disease.css.map */

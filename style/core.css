@@ -87,6 +87,126 @@ nav .nav {
   text-decoration: underline;
 }
 
+@media (max-width: 1024px) {
+  #header .header-num {
+    padding: 8px 20px 0;
+  }
+  #header .header {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #header .header .logo {
+    font-size: 22px;
+  }
+  #header .header-ref .ref-block {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 6px 20px;
+    gap: 4px;
+  }
+  #header .header-ref .ref-block a {
+    margin-right: 12px;
+    font-size: 14px;
+  }
+  .search-block .search-box {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+@media (max-width: 768px) {
+  #header .header-num {
+    height: auto;
+    padding: 6px 16px;
+  }
+  #header .header-num .header-num-phone {
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+  #header .header {
+    padding: 10px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  #header .header .logo {
+    font-size: 20px;
+  }
+  #header .header-ref .ref-block {
+    padding: 6px 16px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  #header .header-ref .ref-block a {
+    font-size: 13px;
+    margin-right: 8px;
+  }
+  .search-block {
+    width: 100%;
+  }
+  .search-block .search-box {
+    width: 100%;
+    max-width: 100%;
+  }
+  nav .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .nav li {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+  footer .footer .footer-wrapper {
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 16px;
+    gap: 24px;
+  }
+  footer .footer .footer-wrapper .foot-first-block,
+  footer .footer .footer-wrapper .foot-second-block,
+  footer .footer .footer-wrapper .foot-third-block,
+  footer .footer .footer-wrapper .foot-fourth-block {
+    width: 100%;
+  }
+  footer .footer .footer-foot-block .foot-block-wrap .foot-block-warn {
+    width: calc(100% - 32px);
+    margin: 0 16px 16px;
+  }
+  footer .footer .footer-foot-block .foot-block-wrap .foot-block-info {
+    width: calc(100% - 32px);
+    margin: 0 16px 20px;
+  }
+}
+@media (max-width: 480px) {
+  #header .header-num .header-num-phone {
+    font-size: 11px;
+  }
+  #header .header .logo {
+    font-size: 18px;
+  }
+  #header .header-ref .ref-block a {
+    font-size: 12px;
+  }
+  footer .footer .footer-wrapper {
+    padding: 16px 12px;
+  }
+  footer .footer .footer-wrapper .foot-first-block h2 {
+    font-size: 20px;
+  }
+  footer .footer .footer-foot-block .foot-block-wrap .foot-block-warn {
+    width: calc(100% - 24px);
+    margin: 0 12px 16px;
+    font-size: 13px;
+  }
+  footer .footer .footer-foot-block .foot-block-wrap .foot-block-info {
+    width: calc(100% - 24px);
+    margin: 0 12px 16px;
+  }
+}
 .search-block {
   position: relative;
 }
@@ -166,6 +286,121 @@ nav .nav {
   visibility: visible;
 }
 
+.search-block .search-products {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 100;
+  width: min(100%, 700px);
+  max-height: 300px;
+  padding: 6px;
+  margin: 0;
+  overflow-y: auto;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  list-style: none;
+}
+.search-block .search-products li {
+  margin: 0;
+  padding: 0;
+}
+.search-block .search-result {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #151415;
+  cursor: pointer;
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+}
+.search-block .search-result:hover {
+  background: #eaf7ec;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.55);
+}
+.modal.active {
+  display: flex;
+}
+.modal .modal-content {
+  position: relative;
+  width: min(680px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 28px;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.25);
+}
+.modal .modal-content .close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  border: none;
+  background: transparent;
+  color: #555555;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 1;
+}
+.modal .modal-content h2 {
+  margin: 0 36px 8px 0;
+  color: #151415;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.modal .modal-content #modalDescription {
+  margin: 0 0 20px;
+  color: #555555;
+  font-size: 15px;
+}
+.modal .modal-content .modal-info {
+  border-top: 1px solid #eeeeee;
+  padding: 16px 0 0;
+  margin-top: 16px;
+}
+.modal .modal-content .modal-info p {
+  margin: 0;
+  color: #333333;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.modal .modal-content .modal-info strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #151415;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .modal {
+    padding: 12px;
+  }
+  .modal .modal-content {
+    padding: 24px 18px;
+  }
+  .modal .modal-content h2 {
+    font-size: 22px;
+  }
+}
 footer {
   width: 100vw;
   background-color: #101828;
@@ -181,7 +416,7 @@ footer .footer a {
   color: white;
 }
 footer .footer .footer-wrapper {
-  width: 1248px;
+  max-width: 1248px;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -190,6 +425,7 @@ footer .footer .footer-wrapper {
   color: white;
   gap: 16px;
   padding-top: 20px;
+  flex-wrap: wrap;
 }
 footer .footer .footer-wrapper .foot-first-block {
   width: 288px;
@@ -244,7 +480,7 @@ footer .footer .footer-foot-block .foot-block-wrap {
   flex-direction: column;
 }
 footer .footer .footer-foot-block .foot-block-wrap .foot-block-warn {
-  width: 1248px;
+  max-width: 1248px;
   border-radius: 16px;
   border: 1px solid #f3a229;
   display: flex;
@@ -257,7 +493,7 @@ footer .footer .footer-foot-block .foot-block-wrap .foot-block-warn {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 footer .footer .footer-foot-block .foot-block-wrap .foot-block-info {
-  width: 1248px;
+  max-width: 1248px;
   margin: 0 auto;
   margin-bottom: 30px;
 }

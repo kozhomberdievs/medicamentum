@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Контакты - MEDICAMENTUM</title>
     <link rel="stylesheet" href="../style/core.css" />
+    <link rel="stylesheet" href="../style/all.css" />
     <style>
+      :root {
+        --theme: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
       body {
         background-color: #ddf5d77c;
+        font-family: var(--theme);
       }
       .contacts-section {
         max-width: 1000px;
@@ -156,13 +162,124 @@
         color: #333;
       }
 
+      /* ── Планшет (до 1024px) ── */
+      @media (max-width: 1024px) {
+        .contacts-section {
+          max-width: 100%;
+          margin: 24px auto;
+          padding: 0 24px 32px;
+        }
+
+        .contacts-section h2 {
+          font-size: 26px;
+        }
+
+        .contacts-container {
+          gap: 20px;
+        }
+
+        .form-container {
+          grid-column: 1 / -1;
+        }
+      }
+
+      /* ── Мобильный горизонтальный (до 768px) ── */
       @media (max-width: 768px) {
+        .contacts-section {
+          margin: 16px auto;
+          padding: 0 16px 24px;
+        }
+
+        .contacts-section h2 {
+          font-size: 22px;
+          margin-bottom: 20px;
+        }
+
         .contacts-container {
           grid-template-columns: 1fr;
+          gap: 16px;
         }
 
         .form-container {
           grid-column: 1;
+          padding: 20px;
+        }
+
+        .contact-info {
+          padding: 20px;
+        }
+
+        .contact-label {
+          min-width: 80px;
+          font-size: 14px;
+        }
+
+        .contact-value {
+          font-size: 14px;
+        }
+
+        div[style*="grid-template-columns: 1fr 1fr"] {
+          display: flex !important;
+          flex-direction: column;
+          gap: 0;
+        }
+      }
+
+      /* ── Мобильный вертикальный (до 480px) ── */
+      @media (max-width: 480px) {
+        .contacts-section {
+          padding: 0 12px 20px;
+        }
+
+        .contacts-section h2 {
+          font-size: 20px;
+        }
+
+        .contact-info {
+          padding: 16px;
+          border-radius: 8px;
+        }
+
+        .contact-info h3 {
+          font-size: 18px;
+        }
+
+        .contact-item {
+          flex-direction: column;
+          gap: 4px;
+          margin-bottom: 12px;
+        }
+
+        .contact-label {
+          min-width: auto;
+          font-size: 13px;
+        }
+
+        .contact-value {
+          font-size: 13px;
+        }
+
+        .form-container {
+          padding: 16px;
+          border-radius: 8px;
+        }
+
+        .form-container h3 {
+          font-size: 18px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+          font-size: 13px;
+        }
+
+        .form-group button {
+          font-size: 14px;
+          padding: 10px 20px;
+        }
+
+        .working-hours p {
+          font-size: 13px;
         }
       }
     </style>
@@ -176,7 +293,7 @@
         </div>
       </section>
       <section class="header">
-        <h1 class="logo" id="logo">Medicamentum</h1>
+        <h1><a class="logo" id="logo" href="../index.html">MEDICAMENTUM</a></h1>
         <div class="search-block">
           <div class="search-box">
             <span class="icon"></span>
@@ -199,8 +316,8 @@
       </section>
       <section class="header-ref">
         <div class="ref-block">
-          <a href="./drugs.html">Все лекарста</a>
-          <a href="">Заболевания</a>
+          <a href="./drugs.html">Все лекарства</a>
+          <a href="./disease.html">Заболевания</a>
           <a href="">Статьи</a>
           <a href="./faq.html">FAQ</a>
         </div>
@@ -280,7 +397,7 @@
           </div>
         </div>
 
-        <div class="form-container">
+        <!-- <div class="form-container">
           <h3>✉️ Форма обратной связи</h3>
           <p style="color: #666; margin-bottom: 20px">
             Заполните форму и мы свяжемся с вами в кратчайшие сроки
@@ -354,8 +471,9 @@
               * — поля обязательны для заполнения
             </p>
           </form>
-        </div>
+        </div> -->
       </section>
     </main>
+    <script src="../js/search.js"></script>
   </body>
 </html>

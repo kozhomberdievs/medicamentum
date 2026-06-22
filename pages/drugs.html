@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Все лекарста</title>
+    <title>Все лекарства</title>
     <link rel="stylesheet" href="../style/core.css" />
     <link rel="stylesheet" href="../style/drug.css" />
+    <link rel="stylesheet" href="../style/modal.css" />
+    <link rel="stylesheet" href="../style/all.css">
   </head>
   <body>
     <header id="header">
@@ -16,7 +18,7 @@
         </div>
       </section>
       <section class="header">
-        <h1 class="logo" id="logo">Medicamentum</h1>
+        <h1><a class="logo" id="logo" href="../index.html">MEDICAMENTUM</a></h1>
         <div class="search-block">
           <div class="search-box">
             <span class="icon"></span>
@@ -39,7 +41,7 @@
       </section>
       <section class="header-ref">
         <div class="ref-block">
-          <a href="">Все лекарста</a>
+          <a href="">Все лекарства</a>
           <a href="./disease.html">Заболевания</a>
           <a href="">Статьи</a>
           <a href="./faq.html">FAQ</a>
@@ -47,13 +49,40 @@
       </section>
     </header>
 
-    <!-- лкарства -->
+    <!-- лeкарства -->
     <main class="main">
       <section
         class="catalog"
         aria-label="Каталог лекарственных препаратов"
       ></section>
     </main>
+
+     <!-- // modal -->
+     <div class="modal" id="modal">
+      <div class="modal-content" id="modalContent">
+        <button class="close" id="close" type="button" aria-label="Закрыть">&times;</button>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <div class="modal-info">
+          <p><strong>Состав:</strong> <span id="modalComposition"></span></p>
+        </div>
+        <div class="modal-info">
+          <p>
+            <strong>Применение:</strong>
+            <span id="modalApplication"></span>
+          </p>
+        </div>
+        <div class="modal-info">
+          <p>
+            <strong>Противопоказание:</strong>
+            <span id="modalContraindications"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
     <script src="../js/data.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/search.js"></script>
   </body>
 </html>

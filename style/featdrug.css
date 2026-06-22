@@ -18,7 +18,23 @@
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.feature-drugs .wrapper .feature-drugs-text .feature-drugs-link {
+  width: 150px;
+  min-height: 25px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  padding: 5px;
+}
+.feature-drugs .wrapper .feature-drugs-text .feature-drugs-link :hover {
+  color: #50b938;
+}
+.feature-drugs .wrapper .feature-drugs-text .feature-drugs-link a {
+  text-decoration: none;
+  color: black;
 }
 .feature-drugs .wrapper .feature-drugs-text h2 {
   font-size: 44px;
@@ -34,4 +50,57 @@
 .feature-drugs .wrapper .catalog .drug .drug-actions .actions-btn a {
   text-decoration: none;
   color: black;
+}
+
+@media (max-width: 1280px) {
+  .feature-drugs .wrapper {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .feature-drugs .wrapper .feature-drugs-text h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 1024px) {
+  .feature-drugs {
+    padding: 40px 0;
+  }
+  .feature-drugs .wrapper {
+    width: 100%;
+    padding: 0 16px;
+  }
+  .feature-drugs .wrapper .feature-drugs-text h2 {
+    font-size: 30px;
+  }
+  .feature-drugs .wrapper .feature-drugs-text p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .feature-drugs {
+    padding: 32px 0;
+  }
+  .feature-drugs .wrapper {
+    padding: 0 16px;
+  }
+  .feature-drugs .wrapper .feature-drugs-text h2 {
+    font-size: 26px;
+  }
+  .feature-drugs .wrapper .catalog {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 480px) {
+  .feature-drugs {
+    padding: 24px 0;
+  }
+  .feature-drugs .wrapper {
+    padding: 0 12px;
+  }
+  .feature-drugs .wrapper .feature-drugs-text h2 {
+    font-size: 22px;
+  }
+  .feature-drugs .wrapper .catalog {
+    grid-template-columns: 1fr !important;
+  }
 }/*# sourceMappingURL=featdrug.css.map */

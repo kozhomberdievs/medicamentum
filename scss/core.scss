@@ -1,3 +1,310 @@
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+// body {
+//   // background: #ffffff;
+//   color: #222222;
+//   // font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+//   //   sans-serif;
+//   // font-family: -apple-system, BlinkMacSystemFont,
+//   //            "SF Pro Display", "Segoe UI", sans-serif;
+//   font-family: "Inter", sans-serif;
+// }
+
+// #header {
+//   width: 100%;
+//   // background: rgb(29, 161, 51);
+//   background-color: white;
+//   color: #000000;
+//   // padding: 10px 40px;
+//   min-height: 80px;
+//   position: sticky;
+//   top: 0;
+//   z-index: 10;
+//   border-bottom: 1px solid rgb(195, 195, 195);
+//   .header-num {
+//     width: 100vw;
+//     height: 35px;
+//     padding: 8px 40px 0;
+//     // background-color: #2ab30b;
+//     background-color: #16a34a;
+//     .header-num-phone {
+//       width: 100%;
+//       display: flex;
+//       flex-direction: row;
+//       gap: 5px;
+//       // margin-left: 10px;
+//       font-size: 14px;
+//       color: rgb(0, 0, 0);
+//       .call-btn {
+//         color: rgb(255, 255, 255);
+//         text-decoration: none;
+//         // display: inline-block;
+//         // padding: 14px 24px;
+//         // background: #16a34a;
+//         // color: white;
+//         // text-decoration: none;
+//         // border-radius: 14px;
+//         // font-family: "Inter", sans-serif;
+//         // font-weight: 600;
+//         // transition: .3s;
+//       }
+//       // .call-btn:hover{
+//       //   transform: scale(1.03);
+//       // }
+//     }
+//   }
+
+//   .header {
+//     width: 100%;
+//     // background: rgb(29, 161, 51);
+//     background-color: white;
+//     color: #000000;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 0 40px;
+//     min-height: 80px;
+//     // .header-logo {
+//     //   width: 30px;
+//     //   height: 30px;
+//     // }
+//     .logo {
+//       font-size: 28px;
+//       font-weight: 700;
+//       color: #0f7c2c;
+//       // color: #16a34a;
+//       text-decoration: none;
+//       cursor: default;
+//     }
+//   }
+//   .header-ref {
+//     min-height: 30px;
+//     .ref-block {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       a {
+//         margin-right: 20px;
+//         color: black;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+// }
+
+// nav .nav {
+//   list-style: none;
+// }
+
+// .nav li {
+//   display: inline-block;
+//   margin-left: 20px;
+// }
+
+// .nav a {
+//   color: #000000;
+//   text-decoration: none;
+//   font-weight: 500;
+// }
+
+// .nav a:hover {
+//   text-decoration: underline;
+// }
+
+// //////// поисковик
+
+// .search-block {
+//   position: relative;
+
+//   .search-box {
+//     width: 700px;
+//     border-radius: 12px;
+//     display: flex;
+//     align-items: center;
+//     border: 0.5px solid #b7b7b7;
+//     background: white;
+//     overflow: hidden;
+//     padding-left: 20px;
+//     .icon {
+//       display: inline-block;
+//       width: 21px;
+//       height: 21px;
+//       border: 3px solid #282828;
+//       position: relative;
+//       border-radius: 50%;
+//     }
+//     .icon::before {
+//       content: "";
+//       position: absolute;
+//       display: inline-block;
+//       right: -4px;
+//       bottom: -4px;
+//       background: #282828;
+//       width: 8px;
+//       height: 3px;
+//       transform: rotate(45deg);
+//     }
+//     .search {
+//       width: 100%;
+//       font-size: 16px;
+//       padding: 10px 10px 10px 20px;
+//       outline: none;
+//       border: none;
+//     }
+//     .search-products {
+//       opacity: 0;
+//       visibility: hidden;
+//       max-width: 231px;
+//       border-radius: 7px;
+//       position: absolute;
+//       top: 58px;
+//       left: 0;
+//       width: 100%;
+//       background: white;
+//       border: 1px solid #ccc;
+//       list-style: none;
+//       overflow: auto;
+//       li {
+//         padding: 10px;
+//         cursor: pointer;
+//         transition: background-color 0.2s;
+//         a {
+//           text-decoration: none;
+//           color: #000;
+//         }
+//       }
+//       li:hover {
+//         background-color: #e6f2ff;
+//       }
+//     }
+//     .search-products::-webkit-scrollbar {
+//       width: 7px;
+//       height: 7px;
+//     }
+//     .search-products::-webkit-scrollbar-thumb {
+//       background: #c1dbf8;
+//       border-radius: 10px;
+//     }
+//   }
+// }
+// .search-block.active-search .search-products {
+//   opacity: 1;
+//   visibility: visible;
+// }
+
+// ////// main block
+
+// ///// footer
+
+// footer {
+//   width: 100vw;
+//   // height: 100vh;
+//   background-color: #101828;
+//   .footer {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+//     a {
+//       text-decoration: none;
+//       list-style: none;
+//       color: white;
+//     }
+//     .footer-wrapper {
+//       width: 1248px;
+//       height: 100%;
+//       display: flex;
+//       flex-direction: row;
+//       justify-content: space-between;
+//       margin: 0 auto;
+//       color: white;
+//       gap: 16px;
+//       padding-top: 20px;
+//       .foot-first-block {
+//         width: 288px;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 16px;
+//         h2 {
+//           color: #0f7c2c;
+//         }
+//         p {
+//           font-size: 14px;
+//           font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+//             "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+//         }
+//         div {
+//           span {
+//             font-size: 20px;
+//           }
+//         }
+//       }
+//       .foot-second-block {
+//         width: 288px;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 8px;
+//         h3 {
+//           margin-bottom: 8px;
+//         }
+//       }
+//       .foot-third-block {
+//         width: 288px;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 8px;
+//         h3 {
+//           margin-bottom: 8px;
+//         }
+//       }
+//       .foot-fourth-block {
+//         width: 288px;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 16px;
+//         h3 {
+//           margin-bottom: 8px;
+//         }
+//       }
+//     }
+//     .footer-foot-block {
+//       width: 100wh;
+//       height: 100%;
+//       margin-top: 20px;
+//       .foot-block-wrap {
+//         display: flex;
+//         flex-direction: column;
+//         .foot-block-warn {
+//           width: 1248px;
+//           border-radius: 16px;
+//           border: 1px solid #f3a229;
+//           display: flex;
+//           align-items: center;
+//           justify-content: center;
+//           background-color: #eca84293;
+//           padding: 16px;
+//           margin: 0 auto;
+//           margin-bottom: 16px;
+//           font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+//             "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+//         }
+//         .foot-block-info {
+//           width: 1248px;
+//           margin: 0 auto;
+//           margin-bottom: 30px;
+//           p {
+//             width: 100%;
+//             text-align: center;
+//             color: white;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 * {
   margin: 0;
   padding: 0;
@@ -57,6 +364,7 @@ body {
       // }
     }
   }
+
   .header {
     width: 100%;
     // background: rgb(29, 161, 51);
@@ -112,6 +420,183 @@ nav .nav {
 
 .nav a:hover {
   text-decoration: underline;
+}
+
+// =====================
+// MEDIA QUERIES — CORE
+// =====================
+
+// Планшет (до 1024px)
+@media (max-width: 1024px) {
+  #header {
+    .header-num {
+      padding: 8px 20px 0;
+    }
+    .header {
+      padding: 0 20px;
+      flex-wrap: wrap;
+      gap: 10px;
+      min-height: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      .logo {
+        font-size: 22px;
+      }
+    }
+    .header-ref {
+      .ref-block {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 6px 20px;
+        gap: 4px;
+        a {
+          margin-right: 12px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .search-block {
+    .search-box {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+}
+
+// Мобильный горизонтальный (до 768px)
+@media (max-width: 768px) {
+  #header {
+    .header-num {
+      height: auto;
+      padding: 6px 16px;
+      .header-num-phone {
+        font-size: 12px;
+        flex-wrap: wrap;
+      }
+    }
+    .header {
+      padding: 10px 16px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+
+      .logo {
+        font-size: 20px;
+      }
+    }
+    .header-ref {
+      .ref-block {
+        padding: 6px 16px;
+        flex-wrap: wrap;
+        gap: 6px;
+        a {
+          font-size: 13px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  .search-block {
+    width: 100%;
+    .search-box {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  nav .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .nav li {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+
+  footer {
+    .footer {
+      .footer-wrapper {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px 16px;
+        gap: 24px;
+
+        .foot-first-block,
+        .foot-second-block,
+        .foot-third-block,
+        .foot-fourth-block {
+          width: 100%;
+        }
+      }
+
+      .footer-foot-block {
+        .foot-block-wrap {
+          .foot-block-warn {
+            width: calc(100% - 32px);
+            margin: 0 16px 16px;
+          }
+          .foot-block-info {
+            width: calc(100% - 32px);
+            margin: 0 16px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Мобильный вертикальный (до 480px)
+@media (max-width: 480px) {
+  #header {
+    .header-num {
+      .header-num-phone {
+        font-size: 11px;
+      }
+    }
+    .header {
+      .logo {
+        font-size: 18px;
+      }
+    }
+    .header-ref {
+      .ref-block {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer {
+      .footer-wrapper {
+        padding: 16px 12px;
+
+        .foot-first-block {
+          h2 { font-size: 20px; }
+        }
+      }
+      .footer-foot-block {
+        .foot-block-wrap {
+          .foot-block-warn {
+            width: calc(100% - 24px);
+            margin: 0 12px 16px;
+            font-size: 13px;
+          }
+          .foot-block-info {
+            width: calc(100% - 24px);
+            margin: 0 12px 16px;
+          }
+        }
+      }
+    }
+  }
 }
 
 //////// поисковик
@@ -195,6 +680,137 @@ nav .nav {
   visibility: visible;
 }
 
+.search-block {
+  .search-products {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 100;
+    width: min(100%, 700px);
+    max-height: 300px;
+    padding: 6px;
+    margin: 0;
+    overflow-y: auto;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    list-style: none;
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .search-result {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #151415;
+    cursor: pointer;
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .search-result:hover {
+    background: #eaf7ec;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.55);
+
+  &.active {
+    display: flex;
+  }
+
+  .modal-content {
+    position: relative;
+    width: min(680px, 100%);
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 12px;
+    background: #ffffff;
+    padding: 28px;
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.25);
+
+    .close {
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      border: none;
+      background: transparent;
+      color: #555555;
+      cursor: pointer;
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    h2 {
+      margin: 0 36px 8px 0;
+      color: #151415;
+      font-size: 26px;
+      line-height: 1.2;
+    }
+
+    #modalDescription {
+      margin: 0 0 20px;
+      color: #555555;
+      font-size: 15px;
+    }
+
+    .modal-info {
+      border-top: 1px solid #eeeeee;
+      padding: 16px 0 0;
+      margin-top: 16px;
+
+      p {
+        margin: 0;
+        color: #333333;
+        font-size: 15px;
+        line-height: 1.55;
+      }
+
+      strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #151415;
+      }
+    }
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .modal {
+    padding: 12px;
+
+    .modal-content {
+      padding: 24px 18px;
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
 ////// main block
 
 ///// footer
@@ -213,7 +829,7 @@ footer {
       color: white;
     }
     .footer-wrapper {
-      width: 1248px;
+      max-width: 1248px;
       height: 100%;
       display: flex;
       flex-direction: row;
@@ -222,6 +838,7 @@ footer {
       color: white;
       gap: 16px;
       padding-top: 20px;
+      flex-wrap: wrap;
       .foot-first-block {
         width: 288px;
         display: flex;
@@ -277,7 +894,7 @@ footer {
         display: flex;
         flex-direction: column;
         .foot-block-warn {
-          width: 1248px;
+          max-width: 1248px;
           border-radius: 16px;
           border: 1px solid #f3a229;
           display: flex;
@@ -291,7 +908,7 @@ footer {
             "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         }
         .foot-block-info {
-          width: 1248px;
+          max-width: 1248px;
           margin: 0 auto;
           margin-bottom: 30px;
           p {

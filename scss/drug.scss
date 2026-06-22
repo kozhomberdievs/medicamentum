@@ -1,7 +1,130 @@
+// body {
+//   background-color: #ddf5d77c;
+//   color: #222222;
+//   font-family: "Inter", sans-serif;
+// }
+// .catalog {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   gap: 16px;
+//   max-width: 1250px;
+//   margin: 20px auto;
+//   padding: 0 20px 40px;
+//   .drug {
+//     width: 300px;
+//     border: 1px solid #dcdcdc;
+//     border-radius: 16px;
+//     padding: 12px;
+//     display: flex;
+//     flex-direction: column;
+//     background: #ffffff;
+//     transition: box-shadow 0.3s ease, transform 0.3s ease;
+//     .drug-img {
+//       height: 200px;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       margin-bottom: 8px;
+//       border-radius: 8px;
+//       .drug-img img {
+//         max-width: 100%;
+//         max-height: 100%;
+//         object-fit: contain;
+//       }
+//     }
+//   }
+//   .drug:hover {
+//     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+//     transform: translateY(-2px);
+//   }
+//   .drug-title {
+//     font-size: 18px;
+//     line-height: 1.3;
+//     color: #151415;
+//     font-weight: 600;
+//   }
+//   .drug-des {
+//     font-size: 14px;
+//     font-weight: 300;
+//     margin-bottom: 8px;
+//   }
+//   .drug-info {
+//     font-size: 14px;
+//     color: #585858;
+//     padding-left: 18px;
+//     margin-bottom: 20px;
+//     .drug-info li {
+//       margin-bottom: 2px;
+//     }
+//     a {
+//       color: black;
+//       text-decoration: none;
+//     }
+//   }
+//   .drug-price {
+//     margin-top: auto;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+//     margin-bottom: 8px;
+//     .price-label {
+//       font-size: 13px;
+//       color: #555;
+//     }
+//     .price-value {
+//       font-weight: 600;
+//       color: green;
+//       font-size: 18px;
+//     }
+//   }
+//   .drug-actions {
+//     display: flex;
+//     justify-content: center;
+//     button {
+//       background: #f1c40f;
+//       border: none;
+//       padding: 8px 16px;
+//       border-radius: 8px;
+//       cursor: pointer;
+//       font-size: 14px;
+//       font-weight: 600;
+//       color: #333;
+//       transition: box-shadow 0.2s ease, transform 0.2s ease,
+//         background-color 0.2s ease;
+//     }
+//     button:hover {
+//       background-color: #f4d03f;
+//       box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+//       transform: translateY(-1px);
+//     }
+//   }
+// }
+
+// @media (max-width: 1024px) {
+//   .catalog {
+//     grid-template-columns: repeat(3, 1fr);
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .catalog {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }
+
+// @media (max-width: 480px) {
+//   .catalog {
+//     grid-template-columns: 1fr;
+//   }
+// }
+:root {
+  --theme: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 body {
   background-color: #ddf5d77c;
   color: #222222;
-  font-family: "Inter", sans-serif;
+  font-family: var(--theme);
 }
 .catalog {
   display: grid;
@@ -11,7 +134,7 @@ body {
   margin: 20px auto;
   padding: 0 20px 40px;
   .drug {
-    width: 300px;
+    max-width: 300px;
     border: 1px solid #dcdcdc;
     border-radius: 16px;
     padding: 12px;
@@ -20,7 +143,7 @@ body {
     background: #ffffff;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     .drug-img {
-      height: 200px;
+      max-height: 200px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -80,6 +203,10 @@ body {
   .drug-actions {
     display: flex;
     justify-content: center;
+    a {
+      text-decoration: none;
+      color: black;
+    }
     button {
       background: #f1c40f;
       border: none;
@@ -100,21 +227,51 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .catalog {
     grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    padding: 0 16px 40px;
+    .drug { width: 100%; }
   }
 }
 
+@media (max-width: 1024px) {
+  .catalog {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 16px 32px;
+    .drug { width: 100%; }
+  }
+}
+@media (max-width: 930px) {
+  .catalog {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 16px 32px;
+    .drug { width: 100%; }
+  }
+  
+}
 @media (max-width: 768px) {
   .catalog {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 12px 24px;
+    gap: 12px;
+    .drug {
+      width: 100%;
+      .drug-img { height: 160px; }
+    }
+    .drug-title { font-size: 16px; }
   }
 }
 
 @media (max-width: 480px) {
   .catalog {
     grid-template-columns: 1fr;
+    padding: 0 12px 20px;
+    gap: 10px;
+    .drug {
+      width: 100%;
+      .drug-img { height: 180px; }
+    }
   }
 }
-

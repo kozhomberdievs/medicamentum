@@ -1,3 +1,4 @@
+
 :root {
   --theme: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -48,8 +49,8 @@
             width: 256px;
             border-radius: 20px;
             img {
-              width: 100%;
-              height: 100%;
+              width: 260px;
+              height: 260px;
               border-top-left-radius: 20px;
               border-bottom-left-radius: 20px;
               object-fit: cover;
@@ -133,3 +134,165 @@
 }
 
 // ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+
+// ==========================
+// MEDIA QUERIES — DISEASE
+// ==========================
+
+// До 1280px
+@media (max-width: 1280px) {
+  .wrapper {
+    .main-block {
+      width: 100%;
+      margin: 0;
+      padding: 32px 20px;
+
+      .main-text {
+        width: 100%;
+      }
+
+      .disease-block {
+        .dis-box {
+          width: 100%;
+
+          .dis-box-wrap {
+            .dis-box-img {
+              width: 200px;
+              flex-shrink: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// До 1024px
+@media (max-width: 1024px) {
+  .wrapper {
+    .main-block {
+      margin: 0;
+      padding: 24px 16px;
+
+      .main-text {
+        width: 100%;
+
+        .text-btns {
+          flex-wrap: wrap;
+        }
+      }
+
+      .disease-block {
+        .dis-box {
+          width: 100%;
+
+          .dis-box-wrap {
+            flex-direction: column;
+
+            .dis-box-img {
+              width: 100%;
+              height: 200px;
+
+              img {
+                border-radius: 20px 20px 0 0;
+                border-bottom-left-radius: 0;
+              }
+            }
+
+            .dis-box-block {
+              padding: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// До 768px
+@media (max-width: 768px) {
+  .wrapper {
+    .main-block {
+      padding: 20px 16px;
+
+      .main-text {
+        p {
+          font-size: 20px;
+        }
+
+        .text-btns {
+          flex-wrap: wrap;
+          gap: 6px;
+
+          button {
+            font-size: 11px;
+            padding: 6px 12px;
+          }
+        }
+      }
+
+      .disease-block {
+        .dis-box {
+          .dis-box-wrap {
+            flex-direction: column;
+
+            .dis-box-img {
+              width: 100%;
+              height: 180px;
+            }
+
+            .dis-box-block {
+              padding: 12px;
+
+              .title {
+                span {
+                  width: auto;
+                  font-size: 12px;
+                }
+
+                h2 {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// До 480px
+@media (max-width: 480px) {
+  .wrapper {
+    .main-block {
+      padding: 16px 12px;
+
+      .main-text {
+        p {
+          font-size: 18px;
+        }
+      }
+
+      .disease-block {
+        .dis-box {
+          .dis-box-wrap {
+            .dis-box-img {
+              height: 150px;
+            }
+
+            .dis-box-block {
+              .symptoms-block {
+                .symptoms-wrap {
+                  .symptoms-dis {
+                    flex-wrap: wrap;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

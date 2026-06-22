@@ -1,7 +1,12 @@
+:root {
+  --theme: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 body {
   background-color: rgba(221, 245, 215, 0.4862745098);
   color: #222222;
-  font-family: "Inter", sans-serif;
+  font-family: var(--theme);
 }
 
 .catalog {
@@ -13,7 +18,7 @@ body {
   padding: 0 20px 40px;
 }
 .catalog .drug {
-  width: 300px;
+  max-width: 300px;
   border: 1px solid #dcdcdc;
   border-radius: 16px;
   padding: 12px;
@@ -23,7 +28,7 @@ body {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .catalog .drug .drug-img {
-  height: 200px;
+  max-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,6 +89,10 @@ body {
   display: flex;
   justify-content: center;
 }
+.catalog .drug-actions a {
+  text-decoration: none;
+  color: black;
+}
 .catalog .drug-actions button {
   background: #f1c40f;
   border: none;
@@ -101,18 +110,60 @@ body {
   transform: translateY(-1px);
 }
 
+@media (max-width: 1280px) {
+  .catalog {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    padding: 0 16px 40px;
+  }
+  .catalog .drug {
+    width: 100%;
+  }
+}
 @media (max-width: 1024px) {
   .catalog {
     grid-template-columns: repeat(3, 1fr);
+    padding: 0 16px 32px;
+  }
+  .catalog .drug {
+    width: 100%;
+  }
+}
+@media (max-width: 930px) {
+  .catalog {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 16px 32px;
+  }
+  .catalog .drug {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
   .catalog {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 12px 24px;
+    gap: 12px;
+  }
+  .catalog .drug {
+    width: 100%;
+  }
+  .catalog .drug .drug-img {
+    height: 160px;
+  }
+  .catalog .drug-title {
+    font-size: 16px;
   }
 }
 @media (max-width: 480px) {
   .catalog {
     grid-template-columns: 1fr;
+    padding: 0 12px 20px;
+    gap: 10px;
+  }
+  .catalog .drug {
+    width: 100%;
+  }
+  .catalog .drug .drug-img {
+    height: 180px;
   }
 }/*# sourceMappingURL=drug.css.map */

@@ -1,4 +1,3 @@
-
 :root {
   --theme: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -196,6 +195,10 @@
               height: 200px;
 
               img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
                 border-radius: 20px 20px 0 0;
                 border-bottom-left-radius: 0;
               }
@@ -241,6 +244,11 @@
             .dis-box-img {
               width: 100%;
               height: 180px;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
             }
 
             .dis-box-block {
@@ -281,6 +289,11 @@
           .dis-box-wrap {
             .dis-box-img {
               height: 150px;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
             }
 
             .dis-box-block {

@@ -1,9 +1,10 @@
 .feature-disease {
-  width: 1440px;
+  width: 100%;
   height: 100%;
 }
 .feature-disease .wrapper {
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
   padding: 0 16px;
   display: flex;
   flex-direction: column;
@@ -11,14 +12,22 @@
   align-items: center;
   margin: 0 auto;
   gap: 20px;
+  box-sizing: border-box;
 }
 .feature-disease .wrapper .feat-disease-text {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
+}
+@media (max-width: 768px) {
+  .feature-disease .wrapper .feat-disease-text {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
 }
 .feature-disease .wrapper .feat-disease-text .feat-disease-link {
   width: 180px;
@@ -27,16 +36,18 @@
   border-radius: 8px;
   padding: 5px;
   background-color: #fff;
+  text-align: center;
 }
-.feature-disease .wrapper .feat-disease-text .feat-disease-link :hover {
+.feature-disease .wrapper .feat-disease-text .feat-disease-link:hover {
   color: #50b938;
 }
 .feature-disease .wrapper .feat-disease-text .feat-disease-link a {
   text-decoration: none;
   color: black;
+  display: block;
 }
 .feature-disease .wrapper .feat-disease-text h2 {
-  font-size: 44px;
+  font-size: clamp(28px, 4vw, 44px);
   margin-bottom: 8px;
 }
 .feature-disease .wrapper .feat-disease-text p {
@@ -53,30 +64,48 @@
 .feature-disease .wrapper .disease-catalog .card {
   background-color: #fff;
   border-radius: 20px;
+  width: 100%;
 }
 .feature-disease .wrapper .disease-catalog .card .dis-box {
-  width: 1248px;
+  width: 100%;
 }
 .feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap {
   display: flex;
   flex-direction: row;
   border: 0.5px solid rgb(200, 200, 200);
   border-radius: 20px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap {
+    flex-direction: column;
+  }
 }
 .feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-img {
   width: 256px;
-  border-radius: 20px;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-img {
+    width: 100%;
+    height: 200px;
+  }
 }
 .feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-img img {
-  width: 260px;
+  width: 100%;
   height: 100%;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+@media (max-width: 768px) {
+  .feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-img img {
+    border-radius: 20px 20px 0 0;
+  }
 }
 .feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block {
-  padding: 24px;
+  padding: clamp(16px, 3vw, 24px);
+  flex-grow: 1;
 }
 .feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .title {
   display: flex;
@@ -84,17 +113,20 @@
   gap: 8px;
 }
 .feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .title span {
-  width: 230px;
-  padding: 4px;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
+  padding: 4px 16px;
   background-color: #009966;
   color: white;
   border-radius: 8px;
   font-size: 14px;
   font-family: var(--theme);
-  padding-inline: 16px;
+  box-sizing: border-box;
 }
 .feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .title h2 {
   font-family: var(--theme);
+  font-size: clamp(20px, 3vw, 28px);
   margin-bottom: 8px;
 }
 .feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .info p {
@@ -115,7 +147,7 @@
   font-weight: 600;
 }
 .feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .symptoms-block .symptoms-wrap .symptoms-dis {
-  max-width: 945px;
+  max-width: 100%;
   flex-wrap: wrap;
   display: flex;
   gap: 8px;
@@ -125,17 +157,20 @@
   border-radius: 18px;
   background-color: #e2e0e0;
   font-size: 12px;
-  padding: 4px;
+  padding: 4px 10px;
   font-family: var(--theme);
 }
 .feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .symptoms-block button {
   border: 0px solid transparent;
   background-color: transparent;
+  padding: 0;
+  cursor: pointer;
 }
 .feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .symptoms-block button a {
   list-style: none;
   text-decoration: none;
   color: #009966;
+  font-weight: 500;
 }
 .feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .symptoms-block button a:hover {
   text-decoration: underline;

@@ -1,0 +1,142 @@
+.feature-disease {
+  width: 1440px;
+  height: 100%;
+}
+.feature-disease .wrapper {
+  width: 1280px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+.feature-disease .wrapper .feat-disease-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.feature-disease .wrapper .feat-disease-text .feat-disease-link {
+  width: 180px;
+  min-height: 25px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #fff;
+}
+.feature-disease .wrapper .feat-disease-text .feat-disease-link :hover {
+  color: #50b938;
+}
+.feature-disease .wrapper .feat-disease-text .feat-disease-link a {
+  text-decoration: none;
+  color: black;
+}
+.feature-disease .wrapper .feat-disease-text h2 {
+  font-size: 44px;
+  margin-bottom: 8px;
+}
+.feature-disease .wrapper .feat-disease-text p {
+  font-size: 16px;
+  font-weight: 300;
+}
+.feature-disease .wrapper .disease-catalog {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.feature-disease .wrapper .disease-catalog .card {
+  background-color: #fff;
+  border-radius: 20px;
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box {
+  width: 1248px;
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap {
+  display: flex;
+  flex-direction: row;
+  border: 0.5px solid rgb(200, 200, 200);
+  border-radius: 20px;
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-img {
+  width: 256px;
+  border-radius: 20px;
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-img img {
+  width: 260px;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block {
+  padding: 24px;
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .title span {
+  width: 230px;
+  padding: 4px;
+  background-color: #009966;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: var(--theme);
+  padding-inline: 16px;
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .title h2 {
+  font-family: var(--theme);
+  margin-bottom: 8px;
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .info p {
+  font-family: var(--theme);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .symptoms-block .symptoms-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .symptoms-block .symptoms-wrap p {
+  font-family: var(--theme);
+  font-size: 14px;
+  font-weight: 600;
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .symptoms-block .symptoms-wrap .symptoms-dis {
+  max-width: 945px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 8px;
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .symptoms-block .symptoms-wrap .symptoms-dis span {
+  border: 0px solid transparent;
+  border-radius: 18px;
+  background-color: #e2e0e0;
+  font-size: 12px;
+  padding: 4px;
+  font-family: var(--theme);
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .symptoms-block button {
+  border: 0px solid transparent;
+  background-color: transparent;
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .symptoms-block button a {
+  list-style: none;
+  text-decoration: none;
+  color: #009966;
+}
+.feature-disease .wrapper .disease-catalog .card .dis-box .dis-box-wrap .dis-box-block .symptoms-block button a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=featdis.css.map */

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/all.css" />
     <link rel="stylesheet" href="./style/drug.css" />
     <link rel="stylesheet" href="./style/featdrug.css" />
+    <link rel="stylesheet" href="./style/featdis.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,7 +52,7 @@
         <div class="ref-block">
           <a href="./pages/drugs.html">Все лекарства</a>
           <a href="./pages/disease.html">Заболевания</a>
-          <a href="./pages/articles.html">Статьи</a>
+          <a href="./pages/article.html">Статьи</a>
           <a href="./pages/faq.html">FAQ</a>
         </div>
       </section>
@@ -128,6 +129,23 @@
       </div>
     </section>
 
+
+
+    <section class="feature-disease">
+      <div class="wrapper">
+        <div class="feat-disease-text">
+          <div>
+            <h2>Распространенные заболевания</h2>
+            <p>Часто запрашиваемая информация о заболеваниях</p>
+          </div>
+          <div class="feat-disease-link">
+            <a href="./pages/disease.html">Все заболевания <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="disease-catalog"></div>
+      </div>
+    </section>
+
     <footer>
       <div class="footer">
         <div class="footer-wrapper">
@@ -154,22 +172,21 @@
           </div>
           <div class="foot-second-block">
             <h3>Разделы</h3>
-            <span><a href="">Лекарства</a></span>
-            <span><a href="">Заболевания</a></span>
-            <span><a href="">Статьи о здоровье</a></span>
-            <span><a href="">FAQ</a></span>
-            <span><a href="">О проекте</a></span>
-            <span><a href="./pages/about.html">О нас</a></span>
-            <span><a href="./pages/contacts.html">Контакты</a></span>
+            <span><a href="./drugs.html">Лекарства</a></span>
+            <span><a href="./disease.html">Заболевания</a></span>
+            <span><a href="./article.html">Статьи о здоровье</a></span>
+            <span><a href="./faq.html">FAQ</a></span>
+            <span><a href="./about.html">О нас</a></span>
+            <span><a href="./contacts.html">Контакты</a></span>
           </div>
           <div class="foot-third-block">
             <h3>Информация</h3>
-            <span><a href="">О проекте</a></span>
-            <span><a href="">Редакция</a></span>
-            <span><a href="./pages/contacts.html">Контакты</a></span>
-            <span><a href="">Реклама</a></span>
-            <span><a href="">Пользовательское соглашение</a></span>
-            <span><a href="">Политика конфиденциальности</a></span>
+            <span>О проекте</span>
+            <span>Редакция</span>
+            <span>Контакты</span>
+            <span>Реклама</span>
+            <span>Пользовательское соглашение</span>
+            <span>Политика конфиденциальности</span>
           </div>
           <div class="foot-fourth-block">
             <h3>Контакты</h3>
@@ -213,5 +230,6 @@
 
     <script src="./js/search.js"></script>
     <script src="./js/feat-drug.js"></script>
+    <script src="./js/feat-disease.js"></script>
   </body>
 </html>

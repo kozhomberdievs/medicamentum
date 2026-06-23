@@ -1,25 +1,18 @@
-const mainBlock = document.querySelector(".disease-block");
+const disCatalog = document.querySelector(".disease-catalog");
+let featuredDisease = [];
 
-const getData = async () => {
+const getDis = async () => {
   try {
-    const response = await fetch("../json/diseases.json");
-    return await response.json();
-  } catch (e) {
-    console.log("Ошибка при загрузке данных:", e);
-  }
-};
+    const response = await fetch("./json/feat-dis.json");
+    const data = await response.json();
+    featuredDisease = data;
 
-const todo = async () => {
-  const data = await getData();
+    data.forEach((element) => {
+      const dis = document.createElement("div");
+      dis.setAttribute("class", "card");
 
-  if (!data || !Array.isArray(data)) return;
-
-  data.forEach((element) => {
-    const card = document.createElement("div");
-    card.setAttribute("class", "card");
-
-    card.innerHTML = `
-    <div class="dis-box">
+      dis.innerHTML = `
+        <div class="dis-box">
             <div class="dis-box-wrap">
               <div class="dis-box-img">
                 <img src="${element.urlImg}" alt="${element.alt}" />
@@ -52,8 +45,11 @@ const todo = async () => {
               </div>
             </div>
           </div>
-    `;
-    mainBlock.appendChild(card);
-  });
+        `;
+      disCatalog.appendChild(dis);
+    });
+  } catch (e) {
+    console.log(e);
+  }
 };
-todo();
+getDis();

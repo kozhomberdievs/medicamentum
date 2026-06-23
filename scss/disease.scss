@@ -50,7 +50,7 @@
             border-radius: 20px;
             img {
               width: 260px;
-              height: 260px;
+              height: 100%;
               border-top-left-radius: 20px;
               border-bottom-left-radius: 20px;
               object-fit: cover;
@@ -97,6 +97,8 @@
                   font-weight: 600;
                 }
                 .symptoms-dis {
+                  max-width: 945px;
+                  flex-wrap: wrap;
                   display: flex;
                   gap: 8px;
                   span {
@@ -108,10 +110,10 @@
                     font-family: var(--theme);
                   }
                 }
-                .symptoms-dis span:nth-child(4) {
-                  background-color: transparent;
-                  color: #8c8c8c;
-                }
+                // .symptoms-dis span:nth-child(4) {
+                //   background-color: transparent;
+                //   color: #8c8c8c;
+                // }
               }
               button {
                 border: 0px solid transparent;

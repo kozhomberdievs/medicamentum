@@ -1,0 +1,143 @@
+:root {
+  --theme: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+main .wrapper {
+  padding: 40px;
+}
+main .wrapper .wrap-text {
+  width: 1248px;
+  margin: 0 0 32px;
+}
+main .wrapper .wrap-text p {
+  font-family: var(--theme);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+main .wrapper .wrap-text .text-btns {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+main .wrapper .wrap-text .text-btns button {
+  border: 1px solid transparent;
+  background-color: #d0fae5;
+  color: #007a55;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 8px;
+  padding-inline: 16px;
+  border-radius: 8px;
+}
+main .wrapper .article-block {
+  width: 100wh;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+main .wrapper .article-block .article-card {
+  max-width: 465px;
+  height: 100%;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 12px;
+}
+main .wrapper .article-block .article-card .card-img {
+  height: 195px;
+}
+main .wrapper .article-block .article-card .card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+main .wrapper .article-block .article-card .card-text {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+main .wrapper .article-block .article-card .card-text p {
+  font-family: var(--theme);
+  font-size: 16px;
+  font-weight: 400;
+}
+main .wrapper .article-block .article-card .card-text :nth-child(2) {
+  font-size: 14px;
+  color: grey;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+main .wrapper .article-block .article-card .card-text :nth-child(3) {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+@media (max-width: 1024px) {
+  main .wrapper .wrap-text {
+    width: 100%;
+  }
+  main .wrapper .article-block {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  main .wrapper .article-block .article-card {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  main .wrapper {
+    padding: 20px;
+  }
+  main .wrapper .wrap-text {
+    width: 100%;
+  }
+  main .wrapper .wrap-text p {
+    font-size: 20px;
+  }
+  main .wrapper .wrap-text .text-btns {
+    flex-direction: column;
+  }
+  main .wrapper .wrap-text .text-btns button {
+    width: 100%;
+    text-align: center;
+  }
+  main .wrapper .article-block {
+    flex-direction: column;
+    gap: 16px;
+  }
+  main .wrapper .article-block .article-card {
+    max-width: 100%;
+  }
+  main .wrapper .article-block .article-card .card-img {
+    height: auto;
+  }
+  main .wrapper .article-block .article-card .card-img img {
+    height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  main .wrapper {
+    padding: 10px;
+  }
+  main .wrapper .wrap-text p {
+    font-size: 18px;
+  }
+  main .wrapper .wrap-text .text-btns button {
+    font-size: 10px;
+    padding: 6px;
+  }
+  main .wrapper .article-block {
+    gap: 12px;
+  }
+  main .wrapper .article-block .article-card .card-text h3 {
+    font-size: 14px;
+  }
+  main .wrapper .article-block .article-card .card-text p {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=article.css.map */
